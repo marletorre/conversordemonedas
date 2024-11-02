@@ -7,6 +7,13 @@ public class TipoCambio {
     private double tasa;
 
 
+    public String getMoneda1() {
+        return moneda1;
+    }
+
+    public String getMoneda2() {
+        return moneda2;
+    }
 
     public TipoCambio(String moneda1, String moneda2, double tasa) {
         this.moneda1 = moneda1;
@@ -21,8 +28,10 @@ public class TipoCambio {
 
     }
 
-    public double resultado(int cantidad){
-        return cantidad*this.tasa;
-    }
 
+
+    public String mostrarResultado(double valor) {
+        return "El valor "+valor+" [" + this.moneda1 + "]" +
+                " corresponde a " +this.tasa*valor + "[" + this.moneda2 + "]";
+    }
 }

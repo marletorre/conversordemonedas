@@ -24,7 +24,7 @@ public class DireccionAPI {
     }
 
     public void redireccionar(int opcion){
-        List<String> posiblesCambios = Arrays.asList("USD/ARS", "ARS/USD", "USD/BRL", "BRL/USD", "USD/COL", "COL/USD");
+        List<String> posiblesCambios = Arrays.asList("USD/ARS", "ARS/USD", "USD/BRL", "BRL/USD", "USD/COP", "COP/USD");
 
         switch (opcion) {
             case 1:

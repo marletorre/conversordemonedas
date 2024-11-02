@@ -27,8 +27,8 @@ public class PrincipalConBusqueda {
                 TipoCambio cambio = MetodosUtiles.conversionElegida(direccion.getDireccion());
                 System.out.println("Que cantidad desea convertir: ");
                 Scanner teclado2 = new Scanner(System.in);
-                int valor = teclado2.nextInt();
-                System.out.println(cambio.resultado(valor));
+                double valor = teclado2.nextDouble();
+                System.out.println(cambio.mostrarResultado(valor));
             }else if (opcion == 7) {
                 break;
             }else{
